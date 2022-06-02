@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+h1{
+    width: 1500px;
+    margin: 0 auto;
+}
+main{
+    display: flex;
+    gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+.to25, .to50, .from50{
+    width: 30%;
+    height: 400px;
+    padding: 30px;
+}
+h1, h2 {
+    font-weight: 400;
+}
+h1{
+    margin-top: 30px;
+}
+h2{
+    font-size: 34px;
+}
+h3{
+    font-weight: 100;
+    font-size: 30px;
+}
+.line{
+    height: 100%;
+    border: 1px solid rgb(200, 200, 200);
+    margin-top: 80px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fbe1afc4;
+    border-radius: 30px;
+    gap: 30px;
+    box-shadow: 0px 0px 10px #fbe1afc4;
+    margin-top: 20px;
+}
+.age{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(253, 253, 253);
+    border-radius: 15px;
+}
+#boxes{
+    overflow-y: scroll;
+    padding-bottom: 10px;
+    height: 490px;
+}
+#boxes{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+#boxes::-webkit-scrollbar {
+    display: none;
+}
+.add{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    margin-left: 7%;
+    margin-top: 40px;
+}
+button{
+    all: unset;
+    width: 120px;
+    cursor: pointer;
+    background-color: rgb(0, 76, 255);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+input{
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgb(199, 199, 199);
+    outline: none;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 10px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.item button{
+    padding: 10px;
+}
+.far{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.block{
+    position: fixed;
+    top: -1420%;
+    background-color: white;
+    width: 400px;
+    height: 390px;
+    border-radius: 20px;
+    left: 35%;
+    padding: 40px;
+    z-index: 1000;
+    transition: .7s ease;
+}
+.block form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.back{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.35);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    opacity: 0;
+    display: none;
+    transition: .4s ease;
+}
+.block form button{
+    padding: 10px;
+}
+.block form input {
+    width: 100%;
+}

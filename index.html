@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">  
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>ПРОПИСАВ ЧЕЛОВЕКА В ФОРМУ - ДОБАВЬТЕ ЕГО В НЕОБХОДИМУЮ КОЛОНКУ</h1>
+
+    <form action="#" class="add" name="add" >
+        <input required type="text" placeholder="Имя" name="name" class="input">
+        <input required type="number" placeholder="Сколько вам лет" name="age" class="input">
+        <button>Добавить</button>
+    </form>
+    <main>
+        <div class="to25">
+            <h2>Люди до 25</h2>
+            <div class="boxes" id="boxes">
+                
+            </div>  
+        </div>
+        <div class="line"></div>
+        <div class="to50">
+            <h2>Люди до 50</h2>
+            <div class="boxes2" id="boxes">
+                
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="from50">
+            <h2>Остальные</h2>
+            <div class="boxes3" id="boxes">
+
+            </div>
+        </div>
+    </main>
+    
+    <div class="modal">
+        <div class="back"></div>
+        <div class="block">
+            <form action="#" name="edit">
+                <input type="text" name="name" class="input" placeholder="Имя">
+                <input type="number" name="age" class="input" placeholder="Сколько вам лет">
+                <button>Сохранить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
